@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "cheddar-gothic-slab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+p {
+  font-family: "scotch-roman-mt-regular", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+body {
+  background-image: url(/img/avis-baggrund.webp);
+}
+
+.billede.container.et img {
+  display: flex;
+  align-items: center;
+}
+
+.billede.container.to img {
+  width: 75%;
+}
+
+.billede.container.tre img {
+  width: 50%;
+}
+
+.billede.container.tre,
+.to,
+.et {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: solid;
+}
+
+.broedtekst.container {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.naeste-side {
+  display: flex;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.naeste-side img {
+  max-width: 25%;
+  width: 100%;
+}
+
+.titel {
+  text-align: center;
+  border-bottom: 5px solid black;
+}
+
+.dato {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2.5px solid black;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.nav {
+  border-bottom: 2.5px solid black;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.nav li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.nav a {
+  color: black;
+}
+
+.nav img {
+  width: 1.5rem;
+}
+
+.artikel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5px;
+}
+
+.broedtekst {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .artikel {
+    grid-template-columns: 1fr;
+  }
+
+  .billede.container img {
+    max-width: 100%;
+  }
+
+  .broedtekst.container {
+    margin-bottom: 20px;
+  }
+
+  .dato {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .dato h5 {
+    font-size: 15px;
+  }
+}
