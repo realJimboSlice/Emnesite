@@ -42,7 +42,7 @@ p {
 }
 
 body {
-  background-image: url(/img/avis-baggrund.webp);
+  background-image: url(img/avis-baggrund.webp);
 }
 
 .billede.container.et img {
